@@ -1,2 +1,10 @@
+.vs
+bin
+GyXdigger.Shell
+GyXdigger.Skeleton
+GyXdigger.Startup
+XdiggerFramework.sln
+packages
 **/bin/Release/*
 **/obj/Debug/*
+**/*.csproj.user

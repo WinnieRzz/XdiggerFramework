@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Addin
+  id="_MiscBarcodeAddin"
+  name="_MiscBarcodeAddin"
+  version="1.0"
+  author=""
+  copyright=""
+  url=""
+  description=""
+  category=""
+  defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="_Shell" version="1.0" />
+    <Addin id="_Skeleton" version="1.0" />
+  </Dependencies>
+
+  <Runtime>
+
+
+  </Runtime>
+
+
+
+  <Extension path = "/Shell/MainMenu/Auxiliary">
+    <Menu id="Barcode" label="Barcode">
+      <MenuItem label="Barcode" command="ShowExtenderCommand" commandParameter="Misc.Barcode.BarcodeExtender"  />
+    </Menu>    
+  </Extension>
+  
+  
+  <Extension path = "/Shell/Extenders">
+    <Extender id="Misc.Barcode.BarcodeExtender" name="Barcode"  title="Barcode" type="GyXdigger.Addins.Misc.Barcode.BarcodeExtender" />
+  </Extension>
+</Addin>
