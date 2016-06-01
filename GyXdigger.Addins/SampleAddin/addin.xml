@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Addin
+  id="_SampleAddin"
+  name="_SampleAddin"
+  version="1.0"
+  author=""
+  copyright=""
+  url=""
+  description=""
+  category=""
+  defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="_Shell" version="1.0" />
+  </Dependencies>
+
+  <Runtime>
+
+
+  </Runtime>
+
+
+
+  <Extension path = "/Shell/MainMenu/Auxiliary">
+    <Menu id="SampleAddin" label="Sample Addin">
+      <MenuItem label="Hello" command="ShowExtenderCommand" commandParameter="SampleAddin.HelloExtender"  />
+    </Menu>    
+  </Extension>
+  
+  
+  <Extension path = "/Shell/Extenders">
+    <Extender id="SampleAddin.HelloExtender" name="Hello"  title="Hello" type="GyXdigger.Addins.SampleAddin.HelloExtender" />
+  </Extension>
+</Addin>
