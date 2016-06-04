@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Addin
-  id="_SampleAddin"
-  name="_SampleAddin"
+  id="SampleAddin"
+  name="Sample Addin"
   version="1.0"
-  author=""
+  author="guyoung"
   copyright=""
   url=""
-  description=""
+  description="Sample Addin"
   category=""
   defaultEnabled="true">
 
@@ -22,13 +22,13 @@
 
 
 
-  <Extension path = "/Shell/MainMenu/Auxiliary">
-    <Menu id="SampleAddin" label="Sample Addin">
+  <Extension path = "/Shell/MainMenu/Tools">
+    <Menu id="SampleAddinMenu" label="Sample Addin">
       <MenuItem label="Hello" command="ShowExtenderCommand" commandParameter="SampleAddin.HelloExtender"  />
-    </Menu>    
+    </Menu>
   </Extension>
-  
-  
+
+
   <Extension path = "/Shell/Extenders">
     <Extender id="SampleAddin.HelloExtender" name="Hello"  title="Hello" type="GyXdigger.Addins.SampleAddin.HelloExtender" />
   </Extension>

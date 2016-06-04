@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Addin
-  id="_MiscBarcodeAddin"
-  name="_MiscBarcodeAddin"
+  id="BarcodeAddin"
+  name="Barcode Addin"
   version="1.0"
-  author=""
+  author="guyoung"
   copyright=""
   url=""
-  description=""
-  category=""
+  description="Barcode Addin"
+  category="Misc"
   defaultEnabled="true">
 
   <Dependencies>
@@ -23,13 +23,13 @@
 
 
 
-  <Extension path = "/Shell/MainMenu/Auxiliary">
-    <Menu id="Barcode" label="Barcode">
+  <Extension path = "/Shell/MainMenu/Tools">
+    <Menu id="BarcodeMenu" label="Barcode">
       <MenuItem label="Barcode" command="ShowExtenderCommand" commandParameter="Misc.Barcode.BarcodeExtender"  />
-    </Menu>    
+    </Menu>
   </Extension>
-  
-  
+
+
   <Extension path = "/Shell/Extenders">
     <Extender id="Misc.Barcode.BarcodeExtender" name="Barcode"  title="Barcode" type="GyXdigger.Addins.Misc.Barcode.BarcodeExtender" />
   </Extension>

@@ -5,6 +5,8 @@ GyXdigger.Skeleton
 GyXdigger.Startup
 XdiggerFramework.sln
 packages
+**/bin/Debug/*
 **/bin/Release/*
 **/obj/Debug/*
+**/obj/Release/*
 **/*.csproj.user
